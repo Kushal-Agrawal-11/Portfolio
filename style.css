@@ -43,13 +43,13 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100 ;
+    z-index: 100;
 
 }
 
 .header.sticky {
     border-bottom: .1rem solid rgba(0, 0, 0, .2);
-} 
+}
 
 .logo {
     font-size: 2.5rem;
@@ -83,7 +83,7 @@ section {
     align-items: center;
 }
 
-.home-img img{
+.home-img img {
     width: 35vw;
     animation: floatImage 4s ease-in-out infinite;
 
@@ -93,9 +93,11 @@ section {
     0% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-2.4rem);
     }
+
     100% {
         transform: translateY(0);
     }
@@ -150,7 +152,7 @@ span {
     width: 20x;
     height: 20px;
 }
-  
+
 .bxl-leetcode img {
     width: 100%;
     height: 90%;
@@ -172,7 +174,7 @@ span {
 
 .btn:hover {
     box-shadow: none;
-} 
+}
 
 .about {
     display: flex;
@@ -187,9 +189,9 @@ span {
     width: 35vw;
     height: 3vw;
     position: relative;
-  }
-  
-  .card {
+}
+
+.card {
     width: 450px;
     height: 300px;
     background-color: var(--second-bg-color);
@@ -207,54 +209,54 @@ span {
     box-shadow: -1px 1px 20px #000;
     transition: transform 200ms;
     cursor: pointer;
-  }
-  
-  .card img {
+}
+
+.card img {
     border-radius: 10px;
     width: 100%;
     height: 100%;
     cursor: pointer;
-  }
-  
-  .card:nth-last-child(n + 4) {
+}
+
+.card:nth-last-child(n + 4) {
     --y: calc(-50% + -30px);
     transform: translate(-50%, var(--y)) scale(0.9);
     box-shadow: 0 0 1px 1px #00000003;
-  }
-  
-  .card:nth-last-child(3) {
+}
+
+.card:nth-last-child(3) {
     --y: calc(-50% + -15px);
     transform: translate(-50%, var(--y)) scale(0.95);
-  }
-  
-  .card:nth-last-child(2) {
+}
+
+.card:nth-last-child(2) {
     --y: calc(-50%);
     transform: translate(-50%, var(--y)) scale(1);
-  }
-  
-  .card:nth-last-child(1) {
+}
+
+.card:nth-last-child(1) {
     --y: calc(-50% + 15px);
     transform: translate(-50%, var(--y)) scale(1.05);
-  }
-  
-  @keyframes swap {
+}
+
+@keyframes swap {
     50% {
-      transform: translate(-50%, calc(var(--y) - 250px)) scale(0.85) rotate(-5deg);
-      animation-timing-function: ease-in;
+        transform: translate(-50%, calc(var(--y) - 250px)) scale(0.85) rotate(-5deg);
+        animation-timing-function: ease-in;
     }
-  
+
     100% {
-      transform: translate(-50%, calc(var(--y) - 15px)) scale(0.85);
-      z-index: -1;
+        transform: translate(-50%, calc(var(--y) - 15px)) scale(0.85);
+        z-index: -1;
     }
-  }
+}
 
-  .nfts {
+.nfts {
     font-size: 2rem !important;
-  }
+}
 
 
-.heading{
+.heading {
     text-align: center;
     font-size: 4.5rem;
 }
@@ -271,7 +273,7 @@ span {
 .about-content p {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
-} 
+}
 
 .skills h2 {
     margin-bottom: 5rem;
@@ -307,14 +309,14 @@ span {
 
 .skills-box h3 {
     font-size: 2rem;
-    
+
 }
 
 .projects {
     background: var(--second-bg-color);
 }
 
-.projects h2{
+.projects h2 {
     margin-bottom: 4rem;
 }
 
@@ -364,7 +366,7 @@ span {
 }
 
 .project-layer h4 {
-    font-size: 3rem; 
+    font-size: 3rem;
 }
 
 .project-layer p {
@@ -411,7 +413,7 @@ span {
     background: var(--second-bg-color);
 }
 
-.footer-text p{
+.footer-text p {
     font-size: 1.6rem;
 }
 
@@ -438,22 +440,22 @@ span {
 
 /* BREAKPOINTS */
 
-@media (max-width: 1350px){
-.card {
-    width: 400px;
-    height: 350px;
+@media (max-width: 1350px) {
+    .card {
+        width: 400px;
+        height: 350px;
 
+    }
+
+    .nfts {
+        margin-right: 1rem;
+        position: left;
+    }
 }
 
-.nfts {
-    margin-right: 1rem;
-    position: left;
-}
-}
 
 
-
-@media (max-width: 1200px){
+@media (max-width: 1200px) {
     html {
         font-size: 55%;
     }
@@ -461,31 +463,31 @@ span {
     .card {
         width: 400px;
         height: 300px;
-    
+
     }
-    
+
     .nfts {
         margin-right: 1rem;
         position: left;
     }
 }
 
-@media (max-width: 1150px){
+@media (max-width: 1150px) {
     .card {
         width: 350px;
         height: 280px;
-    
+
     }
-    
+
     .nfts {
         margin-right: 1rem;
         position: left;
     }
-        
-    
+
+
 }
 
-@media (max-width: 991px){
+@media (max-width: 991px) {
     .header {
         padding: 2rem 3%;
     }
@@ -511,12 +513,13 @@ span {
     .contact {
         padding-bottom: 7rem;
     }
+
     .footer {
-        padding:2rem 3%; 
+        padding: 2rem 3%;
     }
 }
 
-@media (max-width: 820px){
+@media (max-width: 820px) {
     .about {
         flex-direction: column-reverse;
     }
@@ -534,83 +537,84 @@ span {
         display: block;
     }
 
-.navbar {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    padding: 1rem, 3%;
-    background: var(--bg-color);
-    border-top: .1rem solid rgba(0, 0, 0, .2);
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
-    display: none;
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem, 3%;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        display: none;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    .home {
+        flex-direction: column;
+    }
+
+    .home-content h3 {
+        font-size: 2.6rem;
+    }
+
+    .home-content h1 {
+        font-size: 5rem;
+    }
+
+    .home-img img {
+        width: 70vw;
+        margin-top: 4rem;
+    }
+
+    .skills h2 {
+        margin-bottom: 3rem;
+    }
+
+    .projects h2 {
+        margin-bottom: 3rem;
+    }
+
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-.navbar.active {
-    display: block;
-}
+@media (max-width: 670px) {
 
-.navbar a {
-    display: block;
-    font-size: 2rem;
-    margin: 3rem 0;
-}
-
-.home {
-    flex-direction: column;
-}
-
-.home-content h3 {
-    font-size: 2.6rem;
-}
-.home-content h1 {
-    font-size: 5rem;
-}
-
-.home-img img {
-    width: 70vw;
-    margin-top: 4rem;
-}
-
-.skills h2 {
-    margin-bottom: 3rem;
-}
-
-.projects h2 {
-    margin-bottom: 3rem;
-}
-
-.projects-container {
-    grid-template-columns: repeat(2, 1fr);
-}
-}
-
-@media (max-width: 670px){
-    
     .nfts {
         margin-left: 20%;
     }
 }
 
-@media (max-width: 617px){
+@media (max-width: 617px) {
     .projects-container {
         grid-template-columns: 1fr;
     }
 }
 
-@media (max-width: 570px){
+@media (max-width: 570px) {
     .nfts {
         display: none;
-}
+    }
 }
 
-@media  (max-width: 450px) {
+@media (max-width: 450px) {
     html {
         font-size: 50%;
     }
 }
 
-@media  (max-width: 365px) {
+@media (max-width: 365px) {
     .home-img img {
         width: 90vw;
     }
